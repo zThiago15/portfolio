@@ -10,13 +10,13 @@ function App() {
   return (
     <>
       <Header />
-      <article>
+      {/* <article>
         <AboutMe />
         <Education />
         <Skills />
         <Projects />
         <Contact />
-      </article>
+      </article> */}
     </>
   );
 }
