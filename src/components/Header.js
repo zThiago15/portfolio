@@ -16,7 +16,7 @@ function Header(){
               </a>
             </li>
             <li className="nav__item">
-              <a href="#about-me" className="nav__link">
+              <a href="#about" className="nav__link">
                 <AiOutlineUser className="nav__icon" onClick={ () => setShowMenu(!showMenu) } /> Sobre mim
               </a>
             </li>
