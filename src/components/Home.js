@@ -38,7 +38,7 @@ function Home() {
         <div className="home__data">
           <h1 className="home__title">Olá, meu nome é Thiago</h1>
           <h2 className="home__subtitle">Desenvolvedor Fullstack</h2>
-          <p className="home__description">Experiência no desenvolvimento de aplicações com React.js e Node.js</p>  
+          <p className="home__description">Experiência no desenvolvimento de aplicações Front-end e Back-end</p>  
           <a href="#contact" className="button button--flex">Entre em contato <AiOutlineMail className="button__icon" /></a>
         </div>
         
