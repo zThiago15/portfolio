@@ -1,15 +1,59 @@
+import { MdSchool } from 'react-icons/md';
+import { GoCalendar } from 'react-icons/go';
+
 function Education() {
   return (
-    <div id="education">
-      <h2>Formação</h2>
-      <div>
-        <h2>Ciência da Computação - Descomplica</h2>
-        <h2>Desenvolvimento Web Fullstack - Trybe</h2>
-        <h2>Bolsa Trabalho - Prefeitura de São Paulo</h2>
-        <h2>Desenvolvimento de Sistemas - ETEC Prof. Camargo Aranha</h2>
-      </div>
+    <section id="qualification">
+      <h2 className="section__title">Formação</h2>
+      <span className="section__subtitle">Jornada pessoal</span>
 
-    </div>
+      <div className="qualification__container container">
+        <div className="qualification__tabs">
+          <div className="qualification__button button--flex">
+            <MdSchool className="qualification__icon" /> Educação
+          </div>
+        </div>
+
+
+          <div className="qualification__sections">
+            <div className="qualification__content" data-content>
+              <div className="qualification__data">
+                <h3 className="qualification__title">Graduação - Ciência da Computação</h3>
+                <span className="qualification__subtitle">Faculdade Descomplica</span>
+                <div className="qualification__calendar">
+                  <GoCalendar /> 2022 - 2026
+                </div>
+              </div>
+
+              <div className="qualification__data">
+                <h3 className="qualification__title">Curso de Desenvolvimento Web</h3>
+                <span className="qualification__subtitle">Trybe</span>
+                <div className="qualification__calendar">
+                  <GoCalendar /> 2022 - 2023
+                </div>
+              </div>
+
+              <div className="qualification__data">
+                <h3 className="qualification__title">Bolsa Trabalho - Juventude, Trabalho e Fabricação Digital</h3>
+                <span className="qualification__subtitle">Prefeitura de São Paulo</span>
+                <div className="qualification__calendar">
+                  <GoCalendar /> 2022
+                </div>
+              </div>
+
+              <div className="qualification__data">
+                <h3 className="qualification__title">Desenvolvimento de Sistemas</h3>
+                <span className="qualification__subtitle">ETEC Prof. Camargo Aranha</span>
+                <div className="qualification__calendar">
+                  <GoCalendar /> 2020 - 2021
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+      </div>
+    </section>
   );
 }
 

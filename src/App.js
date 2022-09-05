@@ -15,9 +15,9 @@ function App() {
         <Home />
         <AboutMe />
         <Skills />
-        {/* <Education />
+        <Education />
         <Projects />
-        <Contact /> */}
+        {/* <Contact /> */}
       </main>
     </>
   );
