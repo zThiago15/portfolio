@@ -3,7 +3,7 @@ import { GoCalendar } from 'react-icons/go';
 
 function Education() {
   return (
-    <section id="qualification">
+    <section id="education">
       <h2 className="section__title">Formação</h2>
       <span className="section__subtitle">Jornada pessoal</span>
 
