@@ -31,7 +31,7 @@ function Header(){
               </a>
             </li>
             <li className="nav__item">
-              <a href="portfolio" className="nav__link">
+              <a href="#portfolio" className="nav__link">
                 <AiFillFileImage className="nav__icon" onClick={ () => setShowMenu(!showMenu) } /> Portfolio
               </a>
             </li>
