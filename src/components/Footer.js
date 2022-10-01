@@ -1,4 +1,4 @@
-import { AiFillLinkedin } from 'react-icons/ai';
+import { AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai';
 
 function Footer() {
   return (
@@ -21,6 +21,7 @@ function Footer() {
 
           <div className="footer__socials">
             <a href="https://www.linkedin.com/in/thiago-dias-dev" className="footer__social" target="_blank"><AiFillLinkedin /></a>
+            <a href="https://github.com/zthiago15" className="footer__social" target="_blank"><AiOutlineGithub /></a>
           </div>
         </div>
 

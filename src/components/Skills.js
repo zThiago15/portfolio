@@ -23,7 +23,6 @@ function Skills() {
       <span className="section__subtitle">Conhecimento técnico</span>
 
       <div className="skills__container container grid">
-        <div>
 
           <div className="skills__content skills__open">
             <div className="skills__header">
@@ -64,7 +63,7 @@ function Skills() {
             </div>
 
           </div>
-
+          <span className="skills_column"></span>
           <div className="skills__content skills__close">
             <div className="skills__header">
               <FaServer className="skills__icon" />
@@ -111,7 +110,6 @@ function Skills() {
             </div>
 
           </div>
-        </div>
 
       </div>
     </section>

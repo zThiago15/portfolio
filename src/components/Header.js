@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { AiOutlineHome, AiOutlineFileText, AiOutlineUser, AiFillBook, AiFillFileImage, AiOutlineDoubleRight, AiOutlineAppstore, AiOutlineClose } from 'react-icons/ai'
 
 function Header(){
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   return (
     <header className="header" id="header">
