@@ -26,27 +26,31 @@ function Contact() {
           </div>
         </div>
 
-        <form action="" className="contact__form grid">
+        <form action="https://formsubmit.co/thiaguinhodias.15@gmail.com" method="POST" className="contact__form grid">
           <div className="contact__inputs grid">
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="http://localhost:3000" />
+
+
 
             <div className="contact__content">
               <label for="" className="contact__label">Nome</label>
-              <input type="text" className="contact__input" />
+              <input type="text" name="_subject" className="contact__input" required />
             </div>
 
             <div className="contact__content">
               <label for="" className="contact__label">E-mail</label>
-              <input type="email" className="contact__input" />
+              <input type="email" name="email" className="contact__input" />
             </div>
           </div>
 
           <div className="contact__content">
               <label for="" className="contact__label">Mensagem</label>
-              <textarea cols="0" rows="7" className="contact__input" ></textarea>
+              <textarea cols="0" rows="7" name="content" className="contact__input" required ></textarea>
             </div>
 
             <div>
-              <a href="#" className="button button--flex">Enviar <AiOutlineSend className="button__icon" /></a>
+              <button type="submit" className="button button--flex">Enviar <AiOutlineSend className="button__icon" /></button>
             </div>
         </form>
 

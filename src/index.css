@@ -322,6 +322,11 @@ hr {
   padding: 1rem;
   border-radius: .5em;
   font-weight: var(--font-medium);
+  cursor: pointer;
+  border-style: none;
+  width: 15rem;
+
+  font-size: 1rem;
 }
 
 .button:hover {
@@ -337,6 +342,7 @@ hr {
 .button--flex {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 }
 
 /*==================== ABOUT ====================*/
@@ -527,7 +533,7 @@ hr {
 .left-arrow {
   position: absolute;
   top: 50%;
-  left: 32px;
+  left: 20%;
   font-size: 3rem;
   color: #000;
   z-index: 10;
@@ -537,7 +543,7 @@ hr {
 .right-arrow {
   position: absolute;
   top: 50%;
-  right: 32px;
+  right: 20%;
   font-size: 3rem;
   color: #000;
   z-index: 10;
@@ -560,6 +566,18 @@ hr {
   justify-self: center;
 }
 
+.portfolio__data {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: var(--mb-3);
+}
+
 .portfolio__title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
@@ -576,6 +594,8 @@ hr {
 /*==================== CONTACT ME ====================*/
 .contact__container {
   row-gap: 3rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .contact__information {
@@ -626,6 +646,8 @@ hr {
 
 .footer__container {
   row-gap: 3.5rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer__bg {
