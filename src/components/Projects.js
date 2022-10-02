@@ -27,9 +27,8 @@ function Projects() {
 
       <div className="slider">
         <AiOutlineLeft className="button__icon left-arrow" onClick={ prevSlide } />
-        <AiOutlineRight className="button__icon right-arrow" onClick={ nextSlide } />
           { projectData.map((project, index) => {
-            const { image } = project;
+            const { image, title, content, repository } = project;
             return (
               <div className={ index === current ? 'slide active' : 'slide' } key={ index } >
                 {
@@ -37,10 +36,10 @@ function Projects() {
                   <div className="portfolio__data">
                     <img src={ image } className="portfolio__img" />
                     <div className="portfolio__info">
-                      <h3 className="portfolio__title">uyt</h3>
-                      <p className="portfolio__description">uytt</p>
-                      <a href="#" className="button button--flex button--smal portfolio__button">
-                        Teste
+                      <h3 className="portfolio__title">{ title }</h3>
+                      <p className="portfolio__description">{ content }</p>
+                      <a href={ repository } target="_blank" className="button button--flex button--smal portfolio__button">
+                        Repositório
                       </a>
                     </div>
                   </div>)
@@ -48,6 +47,7 @@ function Projects() {
               </div>
             );
           }) }
+        <AiOutlineRight className="button__icon right-arrow" onClick={ nextSlide } />
 
 
       </div>  
