@@ -37,7 +37,7 @@ function Header(){
             </li>
             <li className="nav__item">
               <a href="#contact" className="nav__link">
-                <AiOutlineDoubleRight className="nav__icon" onClick={ () => setShowMenu(!showMenu) } /> Redes sociais
+                <AiOutlineDoubleRight className="nav__icon" onClick={ () => setShowMenu(!showMenu) } /> Contato
               </a>
             </li>
           </ol>
