@@ -23,17 +23,15 @@ function AboutMe() {
           <p className="about__description">Meu grande objetivo é tornar-me um desenvolvedor Fullstack e evoluir para minha carreira internacionalmente.</p>
 
         <div class="about__info">
-          <div>
-            <span className="about__info-title">15+</span>
-            <span className="about__info-name">Projetos feitos</span>
-          </div>
+          <span className="about__info-title">15+</span>
+          <span className="about__info-name">Projetos feitos</span>
+          <span className="about__buttons">
+            <a download="" href={ CV } className="button button--flex">
+              Download CV<AiOutlineDownload className="button__icon" />
+            </a> 
+          </span>
         </div>
 
-        <div className="about__buttons">
-          <a download="" href={ CV } className="button button--flex">
-            Download CV<AiOutlineDownload className="button__icon" />
-          </a> 
-        </div>
       </div>
 
       

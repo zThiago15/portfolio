@@ -361,7 +361,9 @@ hr {
 
 .about__info {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -387,8 +389,7 @@ hr {
 }
 
 .about__buttons {
-  display: flex;
-  justify-content: center;
+  margin-top: 50px;
 }
 
 /*==================== SKILLS ====================*/
@@ -848,9 +849,6 @@ hr {
     text-align: initial;
   }
 
-  .about__info {
-    justify-content: space-between;
-  }
   .about__buttons {
     justify-content: initial;
   }
