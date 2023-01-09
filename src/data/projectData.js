@@ -2,6 +2,7 @@ import SolarSystem from '../assets/imgs/projects/solar-system.png';
 import TrybeWallet from '../assets/imgs/projects/trybe-wallet.png';
 import StoreManager from '../assets/imgs/projects/store-manager.jpg';
 import CarShop from '../assets/imgs/projects/dealership.jpg';
+import BlogAPI from '../assets/imgs/projects/blog.jpg';
 
 export const projectData = [
   {
@@ -28,5 +29,11 @@ export const projectData = [
     title: 'Car Shop',
     content: 'Gerenciamento de uma concessionária de carros e veículos',
     repository: 'https://github.com/zThiago15/car-shop'
+  },
+  {
+    image: BlogAPI,
+    title: 'Blogs API',
+    content: 'API Rest de gerenciamento de um blog',
+    repository: 'https://github.com/zThiago15/Blogs-API'
   }
 ];
