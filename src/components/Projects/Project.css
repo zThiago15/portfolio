@@ -72,8 +72,29 @@
   .portfolio__description {
     margin-bottom: var(--mb-0-75);
     width: 300px;
+    color: black;
   }
-  
+
+  .portfolio_tecnologies {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    width: 70%;
+
+    padding-right: 4px;
+    margin-bottom: 3em;
+  }
+
+  .icon {
+    font-size: xx-large;
+    margin: 8px 4px 8px;
+  }
+
+  #icon__repository {
+    margin-right: 5px;
+  }
+
   .portfolio__button {
     margin-bottom: var(--mb-3);
   }
