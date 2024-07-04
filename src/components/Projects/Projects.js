@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
-import { projectData } from '../data/projectData';
+import { projectData } from '../../data/projectData';
+import './Project.css';
 
 function Projects() {
 
