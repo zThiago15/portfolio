@@ -347,128 +347,11 @@ hr {
   justify-content: center;
 }
 
-/*==================== ABOUT ====================*/
 
 
 /*==================== SKILLS ====================*/
-.skills__container {
-  row-gap: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-.skills__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--mb-2-5);
-  width: 40rem;
-}
-
-.skills__icon,
-.skills__arrow {
-  font-size: 2rem;
-  color: var(--first-color);
-}
-
-.skills__icon {
-  margin-right: var(--mb-0-75);
-}
-
-.skills__title {
-  font-size: var(--h3-font-size);
-}
-
-.skills__subtitle {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.skills__arrow {
-  margin-left: auto;
-  transition: .4s;
-  cursor: pointer;
-}
 
 
-.skills__list {
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-  /* width: 200px; */
-}
-
-.skills_column {
-  border-right: 1px solid grey;
-}
-
-.skills__titles {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
-}
-
-.skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-
-.skills__close .skills__list {
-  height: 0;
-  overflow: hidden;
-}
-
-.skills__open .skills__list {
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
-}
-
-.skills__open .skills__arrow {
-  transform: rotate(-360deg);
-}
-
-/*==================== QUALIFICATION ====================*/
-.qualification__tabs {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--mb-2);
-}
-
-.qualification__button {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-}
-
-.qualification__button:hover {
-  color: var(--first-color);
-}
-
-.qualification__icon {
-  font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
-}
-
-.qualification__data {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: var(--mb-2);
-}
-
-.qualification__title {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-
-.qualification__subtitle {
-  display: inline-block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
-  justify-self: center;
-}
-
-.qualification__calendar {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
 
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
@@ -551,8 +434,6 @@ hr {
 .portfolio__button {
   margin-bottom: var(--mb-3);
 }
-
-/*==================== CONTACT ME ====================*/
 
 
 /*==================== FOOTER ====================*/

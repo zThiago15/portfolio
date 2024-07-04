@@ -2,6 +2,7 @@ import { BiCodeCurly } from 'react-icons/bi';
 import { AiOutlineDown } from 'react-icons/ai'
 import { FaServer } from 'react-icons/fa';
 import { useState } from 'react';
+import './Skills.css';
 
 function Skills() {
 
