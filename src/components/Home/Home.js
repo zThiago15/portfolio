@@ -1,22 +1,35 @@
 import { AiFillLinkedin, AiOutlineGithub, AiOutlineArrowDown, AiOutlineMail } from 'react-icons/ai';
-import Perfil from '../assets/imgs/me.png';
+import Perfil from '../../assets/imgs/me.png';
+import './Home.css';
+import '../../index.css';
 
 function Home() {
   return (
     <section className="home section" id="home">
-      <div className="home__container container grid">
-        <div className="home__content grid">
+      <div className="home__container">
+        <div className="home__content">
 
-          <div className="home__social">
-            <a href="https://www.linkedin.com/in/thiago-dias-dev" target="_blank" className="home__social-icon">
-              <AiFillLinkedin />
-            </a>
-            
-            <a href="https://github.com/zthiago15" target="_blank" className="home__social-icon">
-              <AiOutlineGithub />
-            </a>
+          <div className="home__section">
+            <div className="home__social">
+                  <a href="https://www.linkedin.com/in/thiago-dias-dev" target="_blank" className="home__social-icon">
+                    <AiFillLinkedin />
+                  </a>
+                  
+                  <a href="https://github.com/zthiago15" target="_blank" className="home__social-icon">
+                    <AiOutlineGithub />
+                  </a>
+            </div>
+
+            <div className="home__data">
+
+              <h1 className="home__title">Olá, meu nome é Thiago</h1>
+              <h2 className="home__subtitle">Desenvolvedor Fullstack</h2>
+              <p className="home__description">Experiência no desenvolvimento de aplicações Front-end e Back-end</p>  
+              <a href="#contact" className="button button--flex">Entre em contato <AiOutlineMail className="button__icon" /></a>
+            </div>
+
           </div>
-          
+
           <div className="home__img">
             <svg className="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                   <mask id="mask0" mask-type="alpha">
@@ -33,23 +46,17 @@ function Home() {
                       -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
                     <image className="home__blob-img" x="20" xlinkHref={ Perfil } />
                   </g>
-              </svg>
+            </svg>
+            <div className="home__scroll">
+              <a href="#about" className="home__scroll-button button--flex">
+                <AiOutlineArrowDown className="home__scroll-arrow" />
+                <span className="home__scroll-name">Role para baixo</span>
+              </a>
+            </div>
           </div>
 
-          <div className="home__data">
-            <h1 className="home__title">Olá, meu nome é Thiago</h1>
-            <h2 className="home__subtitle">Desenvolvedor Fullstack</h2>
-            <p className="home__description">Experiência no desenvolvimento de aplicações Front-end e Back-end</p>  
-            <a href="#contact" className="button button--flex">Entre em contato <AiOutlineMail className="button__icon" /></a>
-          </div>
         </div>
  
-        <div className="home__scroll">
-          <a href="#about" className="home__scroll-button button--flex">
-            <AiOutlineArrowDown className="home__scroll-arrow" />
-            <span className="home__scroll-name">Role para baixo</span>
-          </a>
-        </div>
       </div>
     </section>
   );
