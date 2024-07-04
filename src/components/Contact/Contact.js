@@ -1,4 +1,5 @@
 import { AiFillPhone, AiOutlineSend, AiOutlineMail } from 'react-icons/ai'
+import './Contact.css';
 
 function Contact() {
   return (
