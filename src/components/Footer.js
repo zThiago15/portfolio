@@ -1,12 +1,15 @@
 import { AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai';
 
 function Footer() {
+
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer__bg">
         <div className="footer__container container grid">
           <div>
-            <h1 className="footer__title">Thiago</h1>
+            <h1 className="footer__title">Thiago Dias Barboza</h1>
             <span className="footer__subtitle">Desenvolvedor Fullstack</span>
           </div>
 
@@ -17,6 +20,9 @@ function Footer() {
             <li>
               <a href="#contact" className="footer__link">Contato</a>
             </li>
+            <li>
+              <a href="#education" className="footer__link">Formação</a>
+            </li>
           </ol>
 
           <div className="footer__socials">
@@ -25,7 +31,7 @@ function Footer() {
           </div>
         </div>
 
-        <p className="footer__copy">&#169; Bedimcode. Todos os direitos reservados</p>
+        <p className="footer__copy">&#169; {currentYear} - Todos os direitos reservados</p>
       </div>
     </footer>
   );

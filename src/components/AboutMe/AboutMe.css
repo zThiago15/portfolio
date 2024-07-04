@@ -1,0 +1,45 @@
+.about__img {
+    width: 25em;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+  
+  }
+  
+  .about__description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+  }
+  
+  .about__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+  }
+  
+  .about__info-name {
+    font-size: var(--small-font-size);
+  }
+  
+  .about__info-title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+  }
+  
+  .about__info-title,
+  .about__info-name {
+    display: block;
+    text-align:center
+  }
+  
+  .about__info > div > span {
+    display: block;
+    text-align: center;
+  }
+  
+  .about__buttons {
+    margin-top: 50px;
+  }

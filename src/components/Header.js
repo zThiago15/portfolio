@@ -5,7 +5,7 @@ function Header(){
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <header className="header" id="header">
+    <header className="header">
       <nav className="nav container">
         <a href="#" className="nav__logo">Thiago</a>
         <div className={`nav__menu ${showMenu && 'show-menu'}`} id="nav-menu">

@@ -3,7 +3,7 @@
 
 /*==================== VARIABLES CSS ====================*/
 :root {
-    --header-height: 3rem;
+    --header-height: 5rem;
 
     /*========== Colors ==========*/
     /* Change favorite color */
@@ -152,6 +152,8 @@ hr {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+
+  border-bottom: 1px solid var(--body-color);
 }
 
 /*==================== NAV ====================*/
@@ -346,51 +348,7 @@ hr {
 }
 
 /*==================== ABOUT ====================*/
-.about__img {
-  width: 200px;
-  border-radius: .5rem;
-  justify-self: center;
-  align-self: center;
 
-}
-
-.about__description {
-  text-align: center;
-  margin-bottom: var(--mb-2-5);
-}
-
-.about__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: var(--mb-2-5);
-}
-
-.about__info-name {
-  font-size: var(--small-font-size);
-}
-
-.about__info-title {
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-}
-
-.about__info-title,
-.about__info-name {
-  display: block;
-  text-align:center
-}
-
-.about__info > div > span {
-  display: block;
-  text-align: center;
-}
-
-.about__buttons {
-  margin-top: 50px;
-}
 
 /*==================== SKILLS ====================*/
 .skills__container {

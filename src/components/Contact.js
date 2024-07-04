@@ -21,7 +21,7 @@ function Contact() {
               <AiOutlineMail className="contact__icon" />
               <div>
                 <h3 className="contact__subtitle">E-mail</h3>
-                <span>thiaguinhodias.15@gmail.com</span>
+                <span>thiagodias.db15@gmail.com</span>
               </div>
           </div>
         </div>

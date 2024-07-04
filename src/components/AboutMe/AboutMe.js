@@ -1,6 +1,7 @@
 import { AiOutlineDownload } from 'react-icons/ai';
-import Perfil from '../assets/imgs/perfil.png';
-import CV from '../assets/cv/CV-Thiago-Dias-Barboza.pdf';
+import Perfil from '../../assets/imgs/perfil.png';
+import CV from '../../assets/cv/CV-Thiago-Dias-Barboza.pdf';
+import './AboutMe.css';
 
 function AboutMe() {
   return (
