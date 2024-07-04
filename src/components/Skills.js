@@ -1,8 +1,13 @@
 import { BiCodeCurly } from 'react-icons/bi';
 import { AiOutlineDown } from 'react-icons/ai'
 import { FaServer } from 'react-icons/fa';
+import { useState } from 'react';
 
 function Skills() {
+
+  const [openFrontEndSkills, setOpenFrontEndSkills] = useState(false);
+  const [openBackEndSkills, setOpenBackEndSkills] = useState(false);
+
   const toggleSkills = (target) => {
 
     const skillsContents = document.querySelectorAll('.skills__content');
@@ -24,7 +29,7 @@ function Skills() {
 
       <div className="skills__container container grid">
 
-          <div className="skills__content skills__open">
+          <div className={openFrontEndSkills ? "skills__content skills__open" : "skills__content skills__close"}>
             <div className="skills__header">
               <BiCodeCurly className="skills__icon" />
 
@@ -33,7 +38,7 @@ function Skills() {
                 <span className="skills__subtitle">Mais de 1 ano</span>
               </div>
 
-              <AiOutlineDown onClick={ ({ target }) => toggleSkills(target.parentNode) } className="skills__arrow" />
+              <AiOutlineDown onClick={ () => setOpenFrontEndSkills(!openFrontEndSkills) } className="skills__arrow" />
             </div>
 
             <div className="skills__list grid">
@@ -63,8 +68,9 @@ function Skills() {
             </div>
 
           </div>
+          
           <span className="skills_column"></span>
-          <div className="skills__content skills__close">
+          <div className={openBackEndSkills ? "skills__content skills__open" : "skills__content skills__close"}>
             <div className="skills__header">
               <FaServer className="skills__icon" />
 
@@ -73,7 +79,7 @@ function Skills() {
                 <span className="skills__subtitle">Mais de 1 ano</span>
               </div>
 
-              <AiOutlineDown onClick={ ({ target }) => toggleSkills(target.parentNode) } className="skills__arrow" />
+              <AiOutlineDown onClick={ () => setOpenBackEndSkills(!openBackEndSkills) } className="skills__arrow" />
             </div>
 
             <div className="skills__list grid">
@@ -97,14 +103,19 @@ function Skills() {
 
               <div className="skills__data">
                 <div className="skills_titles">
-                  <h3 className="skills__name">MySQL</h3>
+                  <h3 className="skills__name">TypeScript</h3>
                 </div>
               </div>
 
+              <div className="skills__data">
+                <div className="skills_titles">
+                  <h3 className="skills__name">Java</h3>
+                </div>
+              </div>
 
               <div className="skills__data">
                 <div className="skills_titles">
-                  <h3 className="skills__name">TypeScript</h3>
+                  <h3 className="skills__name">MySQL</h3>
                 </div>
               </div>
             </div>
