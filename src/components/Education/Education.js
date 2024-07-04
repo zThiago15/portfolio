@@ -1,5 +1,6 @@
 import { MdSchool } from 'react-icons/md';
 import { GoCalendar } from 'react-icons/go';
+import './Education.css';
 
 function Education() {
   return (
